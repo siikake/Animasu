@@ -50,8 +50,8 @@ const Header = () => {
         <nav className="nav-container" aria-label="Main navigation">
           <div className="nav-brand">
             <Link to="/" className="nav-logo" onClick={closeMobileMenu}>
-              <img src="/logo.png" alt="MrFunk" className="logo-image" />
-              <span className="logo-text">MrFunk</span>
+              <img src="/logo.png" alt="Animasu" className="logo-image" />
+              <span className="logo-text">Animasu</span>
             </Link>
           </div>
           <div className={`nav-menu ${mobileMenuOpen ? 'open' : ''}`} role="navigation">
