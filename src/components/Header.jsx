@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Search, Menu, X } from 'lucide-react';
 import './Header.css';
-import { Search, Menu, X, Play, Film } from 'lucide-react';
-
 
 const Header = () => {
   const location = useLocation();
@@ -78,11 +77,11 @@ const Header = () => {
             })}
           </div>
           <div className="nav-actions">
-            <Link to="/search" className="nav-search-link" onClick={closeMobileMenu} aria-label="Cari">// Contoh penggunaan
-<Search size={20} className="icon-class" />
-</Link>
+            <Link to="/search" className="nav-search-link" onClick={closeMobileMenu} aria-label="Cari">
+              <Search size={20} />
+            </Link>
             <button type="button" className={`mobile-menu-btn ${mobileMenuOpen ? 'open' : ''}`} onClick={() => setMobileMenuOpen(p => !p)} aria-label="Menu">
-              <span className="hamburger-line" /><span className="hamburger-line" /><span className="hamburger-line" />
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </nav>
