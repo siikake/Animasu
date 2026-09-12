@@ -15,23 +15,23 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="MrFunk" />
+    <meta name="apple-mobile-web-app-title" content="Animasu" />
     <meta name="theme-color" content="#9333EA" />
     <meta name="msapplication-TileColor" content="#9333EA" />
     <link rel="manifest" href="/manifest.json" />
 
     <!-- Primary SEO -->
-    <title>MrFunk - Nonton Anime Sub Indo Gratis | Streaming Anime & Donghua Terlengkap 2026</title>
-    <meta name="description" content="MrFunk — Situs streaming anime sub Indo gratis terlengkap. Nonton ribuan judul anime ongoing, completed, dan donghua dengan kualitas terbaik. Update episode baru setiap hari." />
-    <meta name="keywords" content="nonton anime sub indo, streaming anime gratis, anime sub indo terlengkap, nonton anime online gratis, anime ongoing 2026, donghua sub indo, anime terbaru, mrfunk anime, nonton donghua, anime completed sub indo" />
-    <meta name="author" content="MrFunk" />
+    <title>Animasu - Nonton Anime Sub Indo Gratis | Streaming Anime & Donghua Terlengkap 2026</title>
+    <meta name="description" content="Animasu — Situs streaming anime sub Indo gratis terlengkap. Nonton ribuan judul anime ongoing, completed, dan donghua dengan kualitas terbaik. Update episode baru setiap hari." />
+    <meta name="keywords" content="nonton anime sub indo, streaming anime gratis, anime sub indo terlengkap, nonton anime online gratis, anime ongoing 2026, donghua sub indo, anime terbaru, animasu anime, nonton donghua, anime completed sub indo" />
+    <meta name="author" content="Animasu" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://www.mrfunk.my.id" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="MrFunk" />
-    <meta property="og:title" content="MrFunk - Nonton Anime Sub Indo Gratis Terlengkap" />
+    <meta property="og:site_name" content="Animasu" />
+    <meta property="og:title" content="Animasu - Nonton Anime Sub Indo Gratis Terlengkap" />
     <meta property="og:description" content="Situs streaming anime & donghua sub Indo gratis terlengkap. Ribuan judul, update setiap hari, kualitas terbaik." />
     <meta property="og:image" content="https://www.mrfunk.my.id/logo.png" />
     <meta property="og:image:width" content="512" />
@@ -41,7 +41,7 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="MrFunk - Streaming Anime Sub Indo Gratis Terlengkap" />
+    <meta name="twitter:title" content="Animasu - Streaming Anime Sub Indo Gratis Terlengkap" />
     <meta name="twitter:description" content="Nonton ribuan anime & donghua sub Indo gratis. Update episode baru setiap hari dengan kualitas terbaik." />
     <meta name="twitter:image" content="https://www.mrfunk.my.id/logo.png" />
 
@@ -50,8 +50,8 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "MrFunk",
-      "alternateName": "MrFunk Anime",
+      "name": "Animasu",
+      "alternateName": "Animasu Anime",
       "url": "https://www.mrfunk.my.id",
       "description": "Situs streaming anime sub Indo gratis terlengkap. Nonton ribuan judul anime dan donghua dengan kualitas terbaik.",
       "inLanguage": "id",
@@ -62,7 +62,7 @@
       },
       "publisher": {
         "@type": "Organization",
-        "name": "MrFunk",
+        "name": "Animasu",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.mrfunk.my.id/logo.png"
@@ -76,7 +76,7 @@
     {
       "@context": "https://schema.org",
       "@type": "EntertainmentBusiness",
-      "name": "MrFunk",
+      "name": "Animasu",
       "url": "https://www.mrfunk.my.id",
       "logo": "https://www.mrfunk.my.id/logo.png",
       "description": "Situs streaming anime sub Indo gratis terlengkap",
@@ -120,15 +120,10 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          // Only register in production — in dev, the SW caches Vite's
-          // dynamic /@vite/client and /src/main.jsx responses, causing
-          // stale-asset white screens after restarts.
-          // localhost / 127.0.0.1 = dev, everything else = prod.
           const isDev = ['localhost', '127.0.0.1'].includes(location.hostname);
           if (!isDev) {
             navigator.serviceWorker.register('/sw.js').catch(() => {});
           } else {
-            // Dev: nuke any stale SW from previous visits
             navigator.serviceWorker.getRegistrations().then((regs) => {
               regs.forEach((r) => r.unregister());
             });
